@@ -1,0 +1,89 @@
+html,body{
+   background-color: #222;
+   margin: 0;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+span{
+   width: fit-content;
+}
+.container{
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   background-color: #111;
+   overflow: auto;
+}
+.container h1{
+   width: 100%;
+   text-align: center;
+   color: #aaa;
+}
+
+main{
+   position: relative;
+   display: flex;
+   font-size: 1.4rem;
+   justify-content: center;
+}
+main section{
+   display: flex;
+   text-align: center;
+   width: 50%;
+   padding: 0 10px;
+   flex-wrap: wrap;
+   flex-basis: 300px;
+}
+.symbols-set{
+   display: inherit;
+   flex-direction: column;
+   align-items: center;
+   width: 30%;
+   height: 100%;
+}
+section button{
+   background-color: #333;
+   border-radius: 50%;
+   border: 1px solid #333;
+   font-size: 1.6em;
+   min-height: 1.65em;
+   min-width: 1.65em;
+   margin: 5px 0;
+}
+section button:disabled{
+   opacity: 0.3;
+}
+section button:not(:disabled):hover{
+   cursor: pointer;
+   border-color: #aaa;
+}
+section .player-layout{
+   width: 70%;
+}
+.player-layout span.name{
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #333;
+}
+.player-choice{
+   position: relative;
+   text-align: center;
+   width: 100%;
+   padding: 10px 0;
+}
+.player-choice>span{
+   font-size: 4em;
+}
+.winner{
+   margin-top: 5px;
+   color: green;
+}
+button#pi1-rock{
+}
+button#p1-paper{
+}
+button#p1-scissors{
+}
+#player{
+   border-right: 1px solid #888;
+}
