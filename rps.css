@@ -51,6 +51,9 @@ main h3{
    cursor: pointer;
    border-color: #aaa;
 }
+.symbols-set button:not(:disabled):focus{
+   outline: none;
+}
 .results-container{
    padding: 20px 0;
 }

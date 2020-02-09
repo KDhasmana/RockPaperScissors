@@ -12,13 +12,13 @@
       <main>
          <h3>Pick your choice</h3>
          <div class="symbols-set">
-            <button id="p1-rock">👊</button>
-            <button id="p1-paper">🖐</button>
-            <button id="p1-scissors">✌</button>
+            <button id="p1-rock" data-symbol="rock" data-key="r">👊</button>
+            <button id="p1-paper" data-symbol="paper" data-key="p">🖐</button>
+            <button id="p1-scissors" data-symbol="scissors" data-key="s">✌</button>
          </div>
          <div class="results-container">
-            <p id="computer-choice">Computer chose Rock</p>
-            <p id="result" class="win">You won!</p>
+            <p id="computer-choice"></p>
+            <p id="result" class=""></p>
          </div>
          <div id="scores">
             <li>
@@ -26,15 +26,16 @@
                <span id="won-score">0</span>
             </li>
             <li>
-               <span>Draw</span>
-               <span id="draw-score">0</span>
-            </li>
-            <li>
                <span>Lost</span>
                <span id="lost-score">0</span>
+            </li>
+            <li>
+               <span>Draw</span>
+               <span id="draw-score">0</span>
             </li>
          </div>
       </main>
    </div>
+   <script src="game.js"></script>
 </body>
 </html>
