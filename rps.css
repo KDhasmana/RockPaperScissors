@@ -3,6 +3,7 @@ html,body{
    margin: 0;
    font-size: 16px;
    box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
 }
 span{
    width: fit-content;
@@ -22,57 +23,61 @@ span{
 
 main{
    position: relative;
-   display: flex;
    font-size: 1.4rem;
-   justify-content: center;
-}
-main section{
-   display: flex;
    text-align: center;
-   width: 50%;
-   padding: 0 10px;
-   flex-wrap: wrap;
-   flex-basis: 300px;
+}
+main h3{
+   width: 100%;
+   text-align: center;
+   color: #aaa;
 }
 .symbols-set{
-   display: inherit;
-   flex-direction: column;
-   align-items: center;
-   width: 30%;
-   height: 100%;
+   display: flex;
+   justify-content: center;
 }
-section button{
+.symbols-set button{
    background-color: #333;
    border-radius: 50%;
    border: 1px solid #333;
    font-size: 1.6em;
    min-height: 1.65em;
    min-width: 1.65em;
-   margin: 5px 0;
+   margin: 5px;
 }
-section button:disabled{
+.symbols-set button:disabled{
    opacity: 0.3;
 }
-section button:not(:disabled):hover{
+.symbols-set button:not(:disabled):hover{
    cursor: pointer;
    border-color: #aaa;
 }
-section .player-layout{
-   width: 70%;
+.results-container{
+   padding: 20px 0;
 }
-.player-layout span.name{
-   display: inline-block;
-   padding: 10px 20px;
-   background-color: #333;
+#computer-choice{
+   font-size: 0.9em;
 }
-.player-choice{
-   position: relative;
-   text-align: center;
-   width: 100%;
+#result{
+   font-size: 1.2em;
+   margin: 0;
+}
+#result.win{
+   color: green;
+}
+#result.lose{
+   color: red;
+}
+#result.draw{
+   color: grey;
+}
+#scores{
+   display: flex;
    padding: 10px 0;
+   justify-content: center;
 }
-.player-choice>span{
-   font-size: 4em;
+#scores li{
+   list-style: none;
+   margin: 0 15px;
 }
 .winner{
    margin-top: 5px;
@@ -83,7 +88,4 @@ button#pi1-rock{
 button#p1-paper{
 }
 button#p1-scissors{
-}
-#player{
-   border-right: 1px solid #888;
 }

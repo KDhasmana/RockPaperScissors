@@ -10,35 +10,30 @@
    <div class="container">
       <h1>Rock Paper Scissors</h1>
       <main>
-         <section class="player" id="you">
-            <div class="symbols-set">
-               <button id="p1-rock">👊</button>
-               <button id="p1-paper">🖐</button>
-               <button id="p1-scissors">✌</button>
-            </div>
-            <div class="player-layout">
-               <span class="name">You</span>
-               <div class="player-choice">
-                  <span>✌</span>
-               </div>
-               <span class="winner">Winner</span>
-            </div> 
-         </section>
-         
-         <section class="player" id="computer">
-            <div class="symbols-set">
-               <button id="p2-rock" disabled>👊</button>
-               <button id="p2-paper" disabled>🖐</button>
-               <button id="p2-scissors" disabled>✌</button>
-            </div>
-            <div class="player-layout">
-               <span class="name">Computer</span>
-               <div class="player-choice">
-                  <span>✌</span>
-               </div>
-               <span class="winner">Winner</span>
-            </div>     
-         </section>
+         <h3>Pick your choice</h3>
+         <div class="symbols-set">
+            <button id="p1-rock">👊</button>
+            <button id="p1-paper">🖐</button>
+            <button id="p1-scissors">✌</button>
+         </div>
+         <div class="results-container">
+            <p id="computer-choice">Computer chose Rock</p>
+            <p id="result" class="win">You won!</p>
+         </div>
+         <div id="scores">
+            <li>
+               <span>Won</span>
+               <span id="won-score">0</span>
+            </li>
+            <li>
+               <span>Draw</span>
+               <span id="draw-score">0</span>
+            </li>
+            <li>
+               <span>Lost</span>
+               <span id="lost-score">0</span>
+            </li>
+         </div>
       </main>
    </div>
 </body>
