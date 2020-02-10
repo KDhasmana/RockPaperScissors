@@ -36,7 +36,6 @@ class Game{
    }
    keyEventHandler(e: KeyboardEvent){
       let but: HTMLButtonElement = document.querySelector('button[data-key="' + e.key + '"]');
-      console.log(but);
       if(but)
          but.click();
    }
