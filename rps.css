@@ -59,6 +59,7 @@ main h3{
 }
 #computer-choice{
    font-size: 0.9em;
+   color: #aaa;
 }
 #result{
    font-size: 1.2em;
@@ -81,6 +82,7 @@ main h3{
 #scores li{
    list-style: none;
    margin: 0 15px;
+   color: #aaa;
 }
 .winner{
    margin-top: 5px;
